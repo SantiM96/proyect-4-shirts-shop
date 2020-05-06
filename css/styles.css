@@ -1,0 +1,96 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** 1rem = 10px **/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+img {
+    max-width: 100%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff0084+0,ff0084+100;Pink+Flat */
+    background: #ff0084; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ff0084 0%, #ff0084 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ff0084 0%,#ff0084 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ff0084 0%,#ff0084 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0084', endColorstr='#ff0084',GradientType=0 ); /* IE6-9 */
+}
+
+/** Golobal **/
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+}
+.button {
+    display: inline-block;
+    color: black;
+    background-color: #FFCE00;
+    padding: 1.5rem 4rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/** Header-Hero **/
+header {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+/** Main **/
+.hero {
+    text-align: center;
+}
+.main-content h2 {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 2.5rem;
+    text-transform: uppercase;
+    color: white;
+}
+.products-list {
+    list-style: none;
+    padding: 0;
+}
+@media (min-width: 768px) {
+    .products-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+.products-list li {
+    text-align: center;
+    padding: 0 1rem 3rem 1rem;
+}
+@media (min-width: 480px) {
+    .products-list li{
+        float: left;
+        width: 50%;
+        padding-bottom: 3rem;
+    }
+}
+.products-list li:nth-child(2n+1) {
+    clear: both;
+}
+@media (min-width: 768px) {
+    .products-list li {
+        width: 33.3%;
+    }
+}
+.products-list img {
+    border: 0.7rem solid #a50055;
+}
+.products-list p {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 2.5rem 0 1rem 0;
+}
+.products-list span {
+    font-size: 3.3rem;
+    color: #FFCE00;
+}
